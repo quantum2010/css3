@@ -44,60 +44,41 @@ margin-top:0%;
 	margin-right: 20px;
 	margin-top: 10px;
 }
-#principal{
 
-	background-color: #82c3a6;
+#trio1{
+	background-color:#d5c75f ;
 	text-align: center;
 }
-#principal img{
-	width:85%;
-
+#trio2{
+	background-color:#d5c75f ;
+	text-align: center;
 }
-#contenido {
-	width: 100%;
-background-color:#d5c75f;
-text-align:center;
-}
-#contenido img{
-	width:85%;
-}
-#enlaces img{
-	width:85%;
-}
-#enlaces{
-	width:100%;
-text-align:center;
-background-color: #d5c75f;
-}
-
 .sombra {
 	box-shadow: 2px 1px 0px 0px black;
 }
-.ligas{
-	color:black;
-	font-weight: bold;
-	font-size: 18px;
+#foto1 img{
+	webkit-filter: blur(10px);
+	filter:blur(10px);
 }
-#contenido img[src$="2.jpg"]:hover{
-transform: rotate(10deg);
-box-shadow:2px 2px 0px 0px #82c3a6 ;
-border:none;
+#foto2, #foto4, #foto6 img{
+	webkit-filter: grayscale(100%);
+	filter:grayscale(100%);
 }
-#enlaces img[src$="3.jpg"]:hover{
-transform: translate(20px,-5px);
-box-shadow:2px 2px 0px 0px #82c3a6 ;
-border:none;
+#foto3 img{
+	webkit-filter: sepia(90%);
+	filter:sepia(90%);
 }
-
 #legales{
 background-color:#C6d5c5;
 padding-left:10px;
 border-radius: 0px 0px 10px 10px;
+font-size: 20px;
 }
 
 #legales p{
 	width:100%;
 	text-align:justify;
+
 }
 .redes{
 	width:25px;
@@ -117,17 +98,17 @@ border-radius: 0px 0px 10px 10px;
 display:flex;
 flex-direction: row;
 }
-#contenido p{
-	width:100%;
+.sombra{
+	width:85%;
 }
-#contenido{
-display: flex;
-flex-direction: row;
+#trio1, #trio2{
+	display:flex;
+	flex-direction: row;
 }
 
 #legales {
-	font-size: 20px;
-	padding-left: 40px;
+font-size: 20px;
+padding-left:40px;
 	display: flex;
 	flex-direction: row;
 }
@@ -135,29 +116,29 @@ flex-direction: row;
 
 
 @media all and (max-width:900px){
-
 	#encabezado h1{
 		width:100%;
 		text-align: center;
 	}
 	#encabezado p{
 	width:100%;
-	text-align: center;
+	text-align:center;
+	padding-top:10px;
 	}
 #encabezado{
 display:flex;
 flex-direction:column;
 }
-#contenido p{
-	width:100%;
+.sombra{
+	width:85%;
 }
-#contenido{
-display: flex;
-flex-direction: column;
+#trio1, #trio2{
+	display:flex;
+	flex-direction:column;
 }
 
 #legales {
-font-size: 25px;
+	font-size: 25px;
 	padding-left: 150px;
 	display: flex;
 	flex-direction:column;
